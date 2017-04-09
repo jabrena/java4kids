@@ -2,24 +2,35 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Java4Kids</title>
+    <title>Java4Kids // The book</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="Styles/built-editor.css"/>
     <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    <style>
+        .content {
+            margin-top:20px;
+            padding-top:20px;
+            padding-bottom:20px;
+            background-color: #ffffff;
+            font-family: Comic Sans MS
+            margin-bottom: 20px;
+        }
+
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Java4Kids</a>
+        <a class="navbar-brand" href="index.html">Java4Kids</a>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="theBook.html">The book</a>
+                    <a class="nav-link active" href="#">The book</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chapters</a>
@@ -50,56 +61,63 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container content">
         <div class="row">
-            <div class="col-lg-7 col-sm-12">
-                <br />
-<pre id="editor" class="editor" data-editor-lang="java" style="height: 450px">
-package com.java4kids.chapter1;
+            <div class="col-12">
+                <h1>The book</h1>
+                <p>
+                    <strong>Java for Kids</strong> is the title of an easy reading book designed to explain how to learn
+                    Java programming from Scratch.
+                </p>
+                <p>
+                    The author, <a href="http://juanantonio.info/" target="_blank">Juan Antonio Breña Moral</a>,
+                    tries from his dilated educational experience and his experience developing Internet Java projects
+                    on multiple markets to teach the language in this useful and short book.
+                </p>
+                <h2>What is Java?</h2>
+                <p>
+                From <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Wikipedia:</a>
+                </p>
+                <blockquote class="blockquote">
+                    Java is a general-purpose computer programming language that is object-oriented and
+                    specifically designed to have as few implementation dependencies as possible.
+                    It is intended to let application developers "write once, run anywhere" (WORA),
+                    meaning that compiled Java code can run on all platforms that support Java without the need
+                    for recompilation. Java applications are typically compiled to bytecode that can run on
+                    any Java virtual machine (JVM) regardless of computer architecture.
+                    As of 2016, Java is one of the most popular programming languages with a reported 9 million developers.
+                    Java was originally developed by James Gosling at Sun Microsystems
+                    (which has since been acquired by Oracle Corporation) and released in 1995 as
+                    a core component of Sun Microsystems' Java platform.
+                    The language derives much of its syntax from C and C++, but it has fewer low-level facilities
+                    than either of them.
+                </blockquote>
+                <p align="center">
+                    <img src="Images/javaArchitecture.jpg" class="img-fluid" />
+                </p>
+                <h2>Why learn Java?</h2>
+                <p>
+                    If you study a bit the market, you will notice that Java is one of the most used programming
+                    language using different perspectives like:
+                    <a href="https://www.tiobe.com/tiobe-index/" target="_blank">TIOBE</a>,
+                    <a href="http://spectrum.ieee.org/static/interactive-the-top-programming-languages-2016" target="_blank">IEEE Spectrum</a>,
+                    <a href="http://redmonk.com/sogrady/2017/03/17/language-rankings-1-17/" target="_blank">Red monk</a> or
+                    <a href="http://pypl.github.io/PYPL.html" target="_blank">PYPL</a>.
+                </p>
+                <p>
 
-/**
- * Hello World, is your first program in Java language.
- *
- * @author jabrena
- */
-public class HelloWorld {
 
-    /**
-     * The Java Virtual Machine starts up by loading a specified class
-     * and then invoking the method main in this specified class.
-     */
-    public static void main(final String[] args) {
-        //Show in the output a text
-        System.out.println("Hello world");
-    }
+                </p>
 
-}
-</pre>
                 <div id="info"></div>
             </div>
-            <div class="book col-lg-5">
-                <br />
-                <img src="Images/bookProto.png" class="img-fluid" width="77%" />
-            </div>
         </div>
-        <div class="row">
-            <div class="col-12" style="text-align: center;">
-                <a href="#" class="btn btn-lg btn-success">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;Pre order now!
-                </a>
-                <br /><br />
-            </div>
-        </div>
+
     </div>
 
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-    <script src="Scripts/javaparser7.min.js"></script>
-    <script src="Scripts/built-editor.min.js"></script>
-    <script src="Scripts/syntax.min.js"></script>
-    <script src="Scripts/parse.js"></script>
 </body>
 </html>
